@@ -130,32 +130,32 @@ body {
 
 /* line 18, ../sass/style.sass */
 .left-side-holder {
-  background: url("../img/left-side-holder-bg.jpg");
+  background: url("../img/1.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   height: 540px;
-  text-align: right;
 }
+
 /* line 24, ../sass/style.sass */
-.left-side-holder h1 {
-  padding-top: 20%;
-  padding-right: 5%;
-  display: inline-block;
+.logo {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  top: 20%;
+}
+/* line 29, ../sass/style.sass */
+.logo img {
+  max-width: 100%;
 }
 
-/* line 28, ../sass/style.sass */
-.title {
+/* line 32, ../sass/style.sass */
+.menu-food {
+  background: url("../img/2.jpg");
   position: relative;
-}
-
-/* line 31, ../sass/style.sass */
-.menu-food, .menu-drinks {
-  position: relative;
-  background: url("../img/right-block-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
   text-align: center;
   height: 270px;
   cursor: pointer;
@@ -165,29 +165,97 @@ body {
   -o-transition: background-size 1s ease;
   -webkit-transition: background-size 1s ease;
 }
-/* line 46, ../sass/style.sass */
-.menu-food:hover, .menu-drinks:hover {
-  -webkit-background-size: 140%;
-  background-size: 140%;
+/* line 47, ../sass/style.sass */
+.menu-food:hover {
+  -webkit-background-size: 140% auto;
+  background-size: 140% auto;
 }
 
-/* line 49, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
+.menu-drinks {
+  background: url("../img/3.jpg");
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  text-align: center;
+  height: 270px;
+  cursor: pointer;
+  transition: background-size 1s ease;
+  -moz-transition: background-size 1s ease;
+  -ms-transition: background-size 1s ease;
+  -o-transition: background-size 1s ease;
+  -webkit-transition: background-size 1s ease;
+}
+/* line 65, ../sass/style.sass */
+.menu-drinks:hover {
+  -webkit-background-size: 140% auto;
+  background-size: 140% auto;
+}
+
+/* line 68, ../sass/style.sass */
+.menu-3 {
+  background: url("../img/4.jpg");
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  text-align: center;
+  height: 270px;
+  cursor: pointer;
+  transition: background-size 1s ease;
+  -moz-transition: background-size 1s ease;
+  -ms-transition: background-size 1s ease;
+  -o-transition: background-size 1s ease;
+  -webkit-transition: background-size 1s ease;
+}
+/* line 83, ../sass/style.sass */
+.menu-3:hover {
+  -webkit-background-size: 140% auto;
+  background-size: 140% auto;
+}
+
+/* line 86, ../sass/style.sass */
+.menu-4 {
+  background: url("../img/5.jpg");
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  text-align: center;
+  height: 270px;
+  cursor: pointer;
+  transition: background-size 1s ease;
+  -moz-transition: background-size 1s ease;
+  -ms-transition: background-size 1s ease;
+  -o-transition: background-size 1s ease;
+  -webkit-transition: background-size 1s ease;
+}
+/* line 101, ../sass/style.sass */
+.menu-4:hover {
+  -webkit-background-size: 140% auto;
+  background-size: 140% auto;
+}
+
+/* line 104, ../sass/style.sass */
 .content {
   padding-top: 20%;
   position: relative;
 }
-/* line 52, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 .content .fa {
   font-size: 30px;
   color: #F4F7F0;
-  text-shadow: 0 1px 3px #000;
 }
-/* line 56, ../sass/style.sass */
+/* line 110, ../sass/style.sass */
 .content h3 {
   padding-top: 2%;
 }
 
-/* line 59, ../sass/style.sass */
+/* line 113, ../sass/style.sass */
 .overlay:before {
   position: absolute;
   content: " ";
@@ -197,98 +265,127 @@ body {
   height: 100%;
   display: block;
   z-index: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 70, ../sass/style.sass */
+/* line 123, ../sass/style.sass */
+.overlay-white:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 134, ../sass/style.sass */
 [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 73, ../sass/style.sass */
+/* line 137, ../sass/style.sass */
 .place-inner {
   position: relative;
   padding-top: 22%;
 }
 
-/* line 76, ../sass/style.sass */
+/* line 140, ../sass/style.sass */
 .place {
   position: relative;
-  background: url("../img/place.jpg");
+  background: url("../img/6.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   text-align: center;
   height: 360px;
 }
-/* line 83, ../sass/style.sass */
+/* line 147, ../sass/style.sass */
 .place .fa {
   font-size: 30px;
 }
-/* line 85, ../sass/style.sass */
+/* line 149, ../sass/style.sass */
 .place span {
   vertical-align: super;
   font-size: 12px;
 }
 
-/* line 89, ../sass/style.sass */
+/* line 153, ../sass/style.sass */
 .phone {
   position: relative;
-  background: url("../img/phone.jpg");
+  background: url("../img/9.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   height: 360px;
 }
 
-/* line 95, ../sass/style.sass */
+/* line 159, ../sass/style.sass */
 .phone-inner {
   position: relative;
   text-align: center;
   padding-top: 22%;
 }
-/* line 99, ../sass/style.sass */
+/* line 163, ../sass/style.sass */
 .phone-inner .fa {
   color: #ffffff;
   font-size: 30px;
   text-shadow: 0 1px 3px #000;
 }
 
-/* line 103, ../sass/style.sass */
+/* line 167, ../sass/style.sass */
 .mail {
   position: relative;
   height: 360px;
+  background: url("../img/8.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
-/* line 106, ../sass/style.sass */
+/* line 173, ../sass/style.sass */
 .mail-inner {
   position: relative;
   text-align: center;
   padding-top: 22%;
 }
-/* line 110, ../sass/style.sass */
+/* line 177, ../sass/style.sass */
 .mail-inner .fa {
   font-size: 30px;
   color: #ffffff;
   text-shadow: 0 1px 3px #000;
 }
 
-/* line 115, ../sass/style.sass */
+/* line 182, ../sass/style.sass */
 footer {
   background-color: #222;
 }
-/* line 117, ../sass/style.sass */
+/* line 184, ../sass/style.sass */
 footer p {
   font-size: 14px;
   padding: 0.5%;
 }
 
-/* line 120, ../sass/style.sass */
+/* line 187, ../sass/style.sass */
+.logo-footer {
+  width: 70px;
+  height: 20px;
+  margin-top: -35px;
+  margin-right: 10px;
+  float: right;
+}
+/* line 193, ../sass/style.sass */
+.logo-footer img {
+  max-width: 100%;
+}
+
+/* line 195, ../sass/style.sass */
 .border-top {
   display: table-cell;
   border-top: 1px solid #444;
 }
 
-/* line 124, ../sass/style.sass */
+/* line 199, ../sass/style.sass */
 .menu-food-list {
   position: absolute;
   background-color: #fbfcdc;
@@ -296,7 +393,7 @@ footer p {
   top: 960px;
   text-align: center;
 }
-/* line 130, ../sass/style.sass */
+/* line 205, ../sass/style.sass */
 .menu-food-list .fa {
   position: absolute;
   font-size: 30px;
@@ -305,25 +402,47 @@ footer p {
   cursor: pointer;
 }
 
+/* line 212, ../sass/style.sass */
+.menu-drinks-list {
+  position: absolute;
+  background-color: #fbfcdc;
+  width: 50%;
+  top: 960px;
+  text-align: center;
+}
+/* line 218, ../sass/style.sass */
+.menu-drinks-list .fa {
+  position: absolute;
+  font-size: 30px;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
+}
+
+/* line 224, ../sass/style.sass */
+.menu-drinks-list-closed, .menu-food-list-closed {
+  display: none;
+}
+
 /*sticky footer */
-/* line 140, ../sass/style.sass */
+/* line 227, ../sass/style.sass */
 html, body {
   height: 100%;
 }
 
-/* line 142, ../sass/style.sass */
+/* line 229, ../sass/style.sass */
 body {
   display: table;
   width: 100%;
 }
 
-/* line 145, ../sass/style.sass */
+/* line 232, ../sass/style.sass */
 main {
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden */
 }
 
-/* line 148, ../sass/style.sass */
+/* line 235, ../sass/style.sass */
 footer {
   display: table-row;
   height: 1px;

@@ -56,11 +56,46 @@ $(document).ready(function () {
                     rotation();
                 });
         } else {
-            $menuList.addClass("menu-food-list-closed");
             $menuList.stop().animate({top: "960px"}, 1000,function(){
-                $menuList.hide();
+                $menuList.addClass("menu-food-list-closed");
             });
         }
+    });
+        /// menu-food-list-close
+    $(".menu-food-list-close").on("click", function () {
+        var $menuList=$(".menu-food-list");
+        $menuList.stop().animate({top: "960px"}, 1000,function(){
+            $menuList.addClass("menu-food-list-closed");
+        });
+    });
+
+    //drop-down-menu-drinks
+    $(".menu-drinks").on("click", function () {
+        var $menuList=$(".menu-drinks-list");
+        if ($menuList.hasClass("menu-drinks-list-closed")) {
+            $menuList.removeClass("menu-drinks-list-closed");
+            $menuList.show().stop().animate({top: "0px"}, 1000,
+                function () {
+                    var rotation = function () {
+                        $(".menu-drinks-list-close").rotate({
+                            angle: 0,
+                            animateTo: 360
+                        });
+                    };
+                    rotation();
+                });
+        } else {
+            $menuList.stop().animate({top: "960px"}, 1000,function(){
+                $menuList.addClass("menu-drinks-list-closed");
+            });
+        }
+    });
+    /// menu-drinks-list-close
+    $(".menu-drinks-list-close").on("click", function () {
+        var $menuList=$(".menu-drinks-list");
+        $menuList.stop().animate({top: "960px"}, 1000,function(){
+            $menuList.addClass("menu-drinks-list-closed");
+        });
     });
 });
 

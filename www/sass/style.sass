@@ -16,25 +16,26 @@ body
   margin: 0
 
 .left-side-holder
-  background: url("../img/left-side-holder-bg.jpg")
+  background: url("../img/1.jpg")
   -webkit-background-size: cover
   background-size: cover
   height: 540px
-  text-align: right
-  h1
-    padding-top: 20%
-    padding-right: 5%
-    display: inline-block
-.title
-  position: relative
 
-.menu-food, .menu-drinks
+.logo
   position: relative
-  background: url("../img/right-block-bg.jpg")
+  width: 330px
+  height: 330px
+  top: 20%
+  img
+    max-width: 100%
+
+.menu-food
+  background: url("../img/2.jpg")
+  position: relative
   background-position: center center
   background-repeat: no-repeat
-  -webkit-background-size: 100%
-  background-size: 100%
+  -webkit-background-size: 100% auto
+  background-size: 100% auto
   text-align: center
   height: 270px
   cursor: pointer
@@ -44,15 +45,68 @@ body
   -o-transition: background-size 1s ease
   -webkit-transition: background-size 1s ease
   &:hover
-    -webkit-background-size: 140%
-    background-size: 140%
+    -webkit-background-size: 140% auto
+    background-size: 140% auto
+.menu-drinks
+  background: url("../img/3.jpg")
+  position: relative
+  background-position: center center
+  background-repeat: no-repeat
+  -webkit-background-size: 100% auto
+  background-size: 100% auto
+  text-align: center
+  height: 270px
+  cursor: pointer
+  transition: background-size 1s ease
+  -moz-transition: background-size 1s ease
+  -ms-transition: background-size 1s ease
+  -o-transition: background-size 1s ease
+  -webkit-transition: background-size 1s ease
+  &:hover
+    -webkit-background-size: 140% auto
+    background-size: 140% auto
+.menu-3
+  background: url("../img/4.jpg")
+  position: relative
+  background-position: center center
+  background-repeat: no-repeat
+  -webkit-background-size: 100% auto
+  background-size: 100% auto
+  text-align: center
+  height: 270px
+  cursor: pointer
+  transition: background-size 1s ease
+  -moz-transition: background-size 1s ease
+  -ms-transition: background-size 1s ease
+  -o-transition: background-size 1s ease
+  -webkit-transition: background-size 1s ease
+  &:hover
+    -webkit-background-size: 140% auto
+    background-size: 140% auto
+.menu-4
+  background: url("../img/5.jpg")
+  position: relative
+  background-position: center center
+  background-repeat: no-repeat
+  -webkit-background-size: 100% auto
+  background-size: 100% auto
+  text-align: center
+  height: 270px
+  cursor: pointer
+  transition: background-size 1s ease
+  -moz-transition: background-size 1s ease
+  -ms-transition: background-size 1s ease
+  -o-transition: background-size 1s ease
+  -webkit-transition: background-size 1s ease
+  &:hover
+    -webkit-background-size: 140% auto
+    background-size: 140% auto
 .content
   padding-top: 20%
   position: relative
   .fa
     font-size: 30px
     color: $base-color
-    text-shadow: 0 1px 3px #000
   h3
     padding-top: 2%
 
@@ -65,7 +119,17 @@ body
   height: 100%
   display: block
   z-index: 0
-  background-color: rgba(0,0,0,0.5)
+  background-color: rgba(0,0,0,0.4)
+.overlay-white:before
+  position: absolute
+  content: " "
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: block
+  z-index: 0
+  background-color: rgba(255,255,255,0.5)
 
 [class*='col-']
   padding-right: 0
@@ -75,7 +139,7 @@ body
   padding-top: 22%
 .place
   position: relative
-  background: url("../img/place.jpg")
+  background: url("../img/6.jpg")
   -webkit-background-size: cover
   background-size: cover
   text-align: center
@@ -88,7 +152,7 @@ body
 
 .phone
   position: relative
-  background: url("../img/phone.jpg")
+  background: url("../img/9.jpg")
   -webkit-background-size: cover
   background-size: cover
   height: 360px
@@ -103,6 +167,9 @@ body
 .mail
   position: relative
   height: 360px
+  background: url("../img/8.jpg")
+  -webkit-background-size: cover
+  background-size: cover
 .mail-inner
   position: relative
   text-align: center
@@ -117,6 +184,14 @@ footer
   p
     font-size: 14px
     padding: .5%
+.logo-footer
+  width: 70px
+  height: 20px
+  margin-top: -35px
+  margin-right: 10px
+  float: right
+  img
+    max-width: 100%
 .border-top
   display: table-cell
   border-top: 1px solid #444
@@ -133,9 +208,21 @@ footer
     right: 3%
     top: 3%
     cursor: pointer
-.menu-food-list-closed
 
-
+.menu-drinks-list
+  position: absolute
+  background-color: #fbfcdc
+  width: 50%
+  top: 960px
+  text-align: center
+  .fa
+    position: absolute
+    font-size: 30px
+    right: 3%
+    top: 3%
+    cursor: pointer
+.menu-drinks-list-closed, .menu-food-list-closed
+  display: none
 /*sticky footer*/
 html,body
   height: 100%
@@ -144,7 +231,7 @@ body
   width: 100%
 main
   height: 100%
-  overflow: hidden
+  /*overflow: hidden*/
 footer
   display: table-row
   height: 1px
